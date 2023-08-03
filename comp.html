@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form with different question types</title>
+  <link rel="stylesheet" href="comp.css">
+</head>
+<body>
+  <h1>Form with Different Question Types</h1>
+  <form id="questionForm">
+    <!-- Comprehension Question -->
+    <div class="question">
+      <h2>Comprehension Question</h2>
+      <p>What is the capital of France?</p>
+      <input type="text" name="comprehensionAnswer" required>
+    </div>
+
+    <!-- Cloze Question -->
+    <div class="question">
+      <h2>Cloze Question</h2>
+      <p>Complete the sentence: "An apple a day keeps the ____________."</p>
+      <input type="text" name="clozeAnswer" required>
+    </div>
+
+    <!-- Categorized Question -->
+    <div class="question">
+      <h2>Categorized Question</h2>
+      <p>Select the correct animal category for a lion:</p>
+      <input type="radio" name="category" value="mammal" required> Mammal
+      <input type="radio" name="category" value="reptile" required> Reptile
+      <input type="radio" name="category" value="bird" required> Bird
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="comp.js"></script>
+</body>
+</html>
